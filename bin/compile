@@ -21,6 +21,7 @@ source ${build_pack_path}/lib/misc_funcs.sh
 source ${build_pack_path}/lib/erlang_funcs.sh
 source ${build_pack_path}/lib/elixir_funcs.sh
 source ${build_pack_path}/lib/app_funcs.sh
+source ${build_pack_path}/lib/install_deps.sh
 
 mkdir $(platform_tools_path)
 
@@ -39,6 +40,8 @@ install_elixir
 restore_mix
 install_hex
 install_rebar
+
+install_miner
 
 pre_compile_hook
 
